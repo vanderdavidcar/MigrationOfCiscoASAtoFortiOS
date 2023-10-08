@@ -1,1 +1,4 @@
 fortios_*
+.gitignore
+.env
+dev_connection.py

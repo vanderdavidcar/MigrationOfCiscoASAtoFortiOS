@@ -23,6 +23,7 @@ nb_api = ["192.168.20.1"]
 script_collect_intf.py
 
 </b>Looking for all network route configuration and convert them </br></b>
+script_route_table.py
 
 </b>Looking for all IP address and create them as an address object in FortiOS </br></b>
 script_object_addr.py
