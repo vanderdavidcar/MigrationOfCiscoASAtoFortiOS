@@ -10,7 +10,7 @@ passwd = os.getenv("PASSWD")
 secret = os.getenv("SECRET")
 
 # Device connection
-nb_api = ["172.20.201.31"]
+nb_api = ["192.168.20.12"]
 
 def netmiko_asa(ip):
     return {
