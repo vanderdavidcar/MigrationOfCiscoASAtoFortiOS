@@ -2,7 +2,7 @@
 
 pip install -r requirements.txt
 
-- Credentials to connect in devices
+## Credentials to connect in devices
 
 To protect credentials leaking, create a .env file with variables USERNAME/PASSWORD that will be used to connect on devices (USER_LAB/PASS_LAB).</br>
 
