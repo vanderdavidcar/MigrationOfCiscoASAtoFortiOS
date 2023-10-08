@@ -6,15 +6,15 @@ pip install -r requirements.txt
 
 - To protect credentials leaking, create a .env file with variables USERNAME/PASSWORD that will be used to connect on devices (USER_LAB/PASS_LAB).
 
-</b>.env file</b>
-</b>change only the userame and password in .env file</b>
-e.g USER_LAB=vanderson PASS_LAB=cisco
+.env file</br>
+change only the userame and password in .env file</br>
+e.g USER_LAB=vanderson PASS_LAB=cisco</br>
 
-</b>dev_connection</b>
+dev_connection</br>
 A module imported in files ".py" which needed a credentials to connect on devices.
 
-</b>- Change only IP address in line 13</b>
-nb_api = ["192.168.20.1"]
+- Change only IP address in line 13</br>
+nb_api = ["192.168.20.1"]</br>
 
 ## Customer folder
 
