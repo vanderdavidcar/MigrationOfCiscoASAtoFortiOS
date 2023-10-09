@@ -27,5 +27,8 @@ script_route_table.py
 </b>Looking for all IP address and create them as an address object in FortiOS </br></b>
 script_object_addr.py
 
-</b>Looking for all access-list extended, standard, deny... and converting to FortiOS rules</br></b>
-script_rules.py
+</b>Used to create only prefix-lenghts (subnet and host) into object-group </br></b>
+script_files_addrgrp.py
+
+</b>After created all list of IP address in module above, use that function create address group on Fortios using external file</br></b>
+script_addrgrp_object.py
