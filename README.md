@@ -1,12 +1,12 @@
 
-# Disclaimer
+## Disclaimer
 I'm not a dev yet, this is NOT fancy code. It does work (for me at least!) though. You can seriously mess up your producition environment with my scripts if you don't know what you're doing. I take no responsibility for that :)
 
 # Dependencies: Install the requirements to have all dependencies used
 
 pip install -r requirements.txt
 
-## Credentials to connect in devices
+# Credentials to connect in devices
 
 To protect credentials leaking, create a .env file with variables USERNAME/PASSWORD that will be used to connect on devices (USER_LAB/PASS_LAB).</br>
 
