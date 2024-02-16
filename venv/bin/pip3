@@ -1,4 +1,4 @@
-#!/mnt/c/vanderson/codes/projetos-git/public/tshoot/cisco-asa/general/venv/bin/python3
+#!/home/chetos/projetos-git/fw_ciscoasa_to_fortios/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -1,6 +1,6 @@
 fortios_*
 .gitignore
-*.env
+.env
 dev_connection.py
 output_*
 *any_in.py
