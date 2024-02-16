@@ -1,0 +1,890 @@
+DEBUG:paramiko.transport:starting thread (client mode): 0xeafc5d50
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.9p1)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+DEBUG:paramiko.transport:server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+DEBUG:paramiko.transport:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+DEBUG:paramiko.transport:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+DEBUG:paramiko.transport:client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:client compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:server compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Strict kex mode: True
+DEBUG:paramiko.transport:Kex: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:HostKey: ssh-ed25519
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Resetting outbound seqno after NEWKEYS due to strict mode
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Resetting inbound seqno after NEWKEYS due to strict mode
+DEBUG:paramiko.transport:Adding ssh-ed25519 host key for 192.168.0.12: b'e62503b44960a331c9f579c5eca5ca2f'
+DEBUG:paramiko.transport:Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) failed.
+DEBUG:paramiko.transport:starting thread (client mode): 0xf27c5ea0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-1.99-Cisco-1.25
+INFO:paramiko.transport:Connected (version 1.99, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group1-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-cbc, 3des-cbc, aes192-cbc, aes256-cbc
+DEBUG:paramiko.transport:server encrypt: aes128-cbc, 3des-cbc, aes192-cbc, aes256-cbc
+DEBUG:paramiko.transport:client mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
+DEBUG:paramiko.transport:server mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group1-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-cbc
+DEBUG:paramiko.transport:MAC: hmac-sha1
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 172.20.201.30: b'0250568361bb70ac2e83bb5443d19b26'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: Type help or '?' for a list of available commands.
+
+BSL-VFW-ASA01/admin/stby> 
+
+BSL-VFW-ASA01/admin/stby> 
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: erminal wi
+DEBUG:netmiko:read_channel: dth 511
+                            ^
+ERROR: % Invalid input detected at '^' marker.
+ERROR: Command authorization failed
+
+BSL-VFW-ASA01/admin/stby> 
+DEBUG:netmiko:Pattern found: (terminal width 511) Type help or '?' for a list of available commands.
+
+BSL-VFW-ASA01/admin/stby> 
+
+BSL-VFW-ASA01/admin/stby> terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal l
+DEBUG:netmiko:read_channel: ength 0
+                            ^
+ERROR: % Invalid input detected at '^' marker.
+ERROR: Command authorization failed
+
+BSL-VFW-ASA01/admin/stby> 
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+                            ^
+ERROR: % Invalid input detected at '^' marker.
+ERROR: Command authorization failed
+
+BSL-VFW-ASA01/admin/stby> terminal length 0
+DEBUG:netmiko:
+                            ^
+ERROR: % Invalid input detected at '^' marker.
+ERROR: Command authorization failed
+
+BSL-VFW-ASA01/admin/stby> terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+BSL-VFW-ASA01/admin/stby> 
+DEBUG:netmiko:
+Parenthesis found in pattern.
+
+pattern: (\#|>)
+
+
+This can be problemtic when used in read_until_pattern().
+
+You should ensure that you use either non-capture groups i.e. '(?:' or that the
+parenthesis completely wrap the pattern '(pattern)'
+DEBUG:netmiko:Pattern found: (\#|>) 
+
+BSL-VFW-ASA01/admin/stby>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is BSL-VFW-ASA01/admin/stby>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+BSL-VFW-ASA01/admin/stby> 
+DEBUG:netmiko:Pattern found: (BSL\-VFW\-ASA01/ad.*) 
+
+BSL-VFW-ASA01/admin/stby> 
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: enable
+Password: 
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: ((?:BSL\-VFW\-ASA01/ad|ssword)) 
+Password
+DEBUG:netmiko:write_channel: b'********\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: *********
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+BSL-VFW-ASA01/admin/stby# 
+DEBUG:netmiko:Pattern found: (BSL\-VFW\-ASA01/ad) : *********
+
+BSL-VFW-ASA01/ad
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+BSL-VFW-ASA01/admin/stby# 
+DEBUG:netmiko:Pattern found: (BSL\-VFW\-ASA01/ad.*) min/stby# 
+
+BSL-VFW-ASA01/admin/stby# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+BSL-VFW-ASA01/admin/stby# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is BSL-VFW-ASA01/admin/stby#
+DEBUG:netmiko:write_channel: b'terminal pager 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal page
+DEBUG:netmiko:read_channel: r 0
+
+BSL-VFW-ASA01/admin/stby# 
+DEBUG:netmiko:Pattern found: (terminal\ pager\ 0) terminal pager 0
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+BSL-VFW-ASA01/admin/stby# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is BSL-VFW-ASA01/admin/stby#
+DEBUG:netmiko:write_channel: b'show object-group service\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: s
+DEBUG:netmiko:read_channel: how object-gro
+DEBUG:netmiko:read_channel: up service
+
+BSL-VFW-ASA01/admin/stby# 
+DEBUG:netmiko:Pattern found: (show\ object\-group\ service) show object-group service
+DEBUG:netmiko:read_channel: 
+DEBUG:paramiko.transport:starting thread (client mode): 0x747c9ea0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group1-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: 3des-cbc, aes128-cbc, aes192-cbc, aes256-cbc, aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: 3des-cbc, aes128-cbc, aes192-cbc, aes256-cbc, aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group1-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha1
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 172.20.201.31: b'6bec018a1e71ee2fab914f9de33153fc'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: +--------------------=== WARNING ===------------------------+
+| THIS IS A PRIVATE AND PROPRIETARY SYSTEM OF AMERICA MOVIL.|
+| ANY UNAUTHORIZED ACCESS TO OR MISUSE OF THE SYSTEM OR DATA|
+| MAY RESULT IN CIVIL AND/OR CRIMINAL PROSECUTION. AMERICA  |
+| MONITORS THE ACCESS AND USE OF THIS SYSTEM. |
++--------------------=== WARNING ===------------------------+
+Type help or '?' for a list of available commands.
+
+BSL-PES-FW01> 
+
+BSL-PES-FW01> 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal w
+DEBUG:netmiko:read_channel: idth 511
+                       ^
+ERROR: % Invalid input detected at '^' marker.
+
+BSL-PES-FW01> 
+DEBUG:netmiko:Pattern found: (terminal width 511) +--------------------=== WARNING ===------------------------+
+| THIS IS A PRIVATE AND PROPRIETARY SYSTEM OF AMERICA MOVIL.|
+| ANY UNAUTHORIZED ACCESS TO OR MISUSE OF THE SYSTEM OR DATA|
+| MAY RESULT IN CIVIL AND/OR CRIMINAL PROSECUTION. AMERICA  |
+| MONITORS THE ACCESS AND USE OF THIS SYSTEM. |
++--------------------=== WARNING ===------------------------+
+Type help or '?' for a list of available commands.
+
+BSL-PES-FW01> 
+
+BSL-PES-FW01> terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: rminal le
+DEBUG:netmiko:read_channel: ngth 0
+                       ^
+ERROR: % Invalid input detected at '^' marker.
+
+BSL-PES-FW01> 
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+                       ^
+ERROR: % Invalid input detected at '^' marker.
+
+BSL-PES-FW01> terminal length 0
+DEBUG:netmiko:
+                       ^
+ERROR: % Invalid input detected at '^' marker.
+
+BSL-PES-FW01> terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+BSL-PES-FW01> 
+DEBUG:netmiko:
+Parenthesis found in pattern.
+
+pattern: (\#|>)
+
+
+This can be problemtic when used in read_until_pattern().
+
+You should ensure that you use either non-capture groups i.e. '(?:' or that the
+parenthesis completely wrap the pattern '(pattern)'
+DEBUG:netmiko:Pattern found: (\#|>) 
+
+BSL-PES-FW01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is BSL-PES-FW01>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+BSL-PES-FW01> 
+DEBUG:netmiko:Pattern found: (BSL\-PES\-FW01.*) 
+
+BSL-PES-FW01> 
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: enable
+Password: 
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: ((?:BSL\-PES\-FW01|ssword)) 
+Password
+DEBUG:netmiko:write_channel: b'********\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: *********
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+BSL-PES-FW01# 
+DEBUG:netmiko:Pattern found: (BSL\-PES\-FW01) : *********
+
+BSL-PES-FW01
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+BSL-PES-FW01# 
+DEBUG:netmiko:Pattern found: (BSL\-PES\-FW01.*) # 
+
+BSL-PES-FW01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+BSL-PES-FW01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is BSL-PES-FW01#
+DEBUG:netmiko:write_channel: b'terminal pager 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal page
+DEBUG:netmiko:read_channel: r 0
+
+BSL-PES-FW01# 
+DEBUG:netmiko:Pattern found: (terminal\ pager\ 0) terminal pager 0
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+BSL-PES-FW01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is BSL-PES-FW01#
+DEBUG:netmiko:write_channel: b'show object-group service\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show object-gr
+DEBUG:netmiko:read_channel: oup service
+object-group service Block-Mgmt-Ports-TCP tcp
+ port-object eq 3389
+ port-object eq 5800
+ port-object eq 5900
+ port-object eq ssh
+ port-object eq telnet
+object-group service Block-Mgmt-Ports-UDP udp
+ port-object eq snmp
+ port-object eq snmptrap
+object-group service DM_INLINE_TCP_1 tcp
+ port-object eq 3389
+
+DEBUG:netmiko:Pattern found: (show\ object\-group\ service) show object-group service
+DEBUG:netmiko:read_channel:  port-object eq ssh
+object-group service DM_INLINE_TCP_2 tcp
+ port-object eq 3389
+ port-object eq ssh
+ port-object eq www
+ port-object eq https
+object-group service DM_INLINE_TCP_4 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_TCP_5 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_TCP_6 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_TCP_8 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_TCP_9 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_SERVICE_1
+ service-object object UDP_389 
+ service-object object tcp_389 
+object-group service DM_INLINE_SERVICE_2
+ service-object tcp destination eq domain 
+ service-object udp destination eq domain 
+object-group service DM_INLINE_SERVICE_3
+ service-object tcp destination eq domain 
+
+DEBUG:netmiko:read_channel:  service-object udp destination eq domain 
+object-group service DM_INLINE_SERVICE_5
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object icmp echo
+ service-object icmp6 echo
+ service-object tcp destination eq echo 
+ service-object udp destination eq echo 
+object-group service DM_INLINE_TCP_10 tcp
+ port-object eq www
+ port-object eq https
+object-group service DM_INLINE_UDP_1 udp
+ port-object eq domain
+ port-object eq ntp
+object-group service DM_INLINE_SERVICE_4
+ service-object icmp 
+ service-object tcp destination range 9081 9082 
+ service-object tcp destination range 9762 9763 
+ service-object tcp destination eq 8280 
+object-group service 8280 tcp
+ port-object eq 8280
+object-group service 445 tcp-udp
+ port-object eq 445
+object-group service TCP1433 tcp
+ port-object eq 1433
+object-group service DM_INLINE_TCP_11 tcp
+ port-object eq www
+ port-object eq https
+object-group service DM_INLINE_TCP_12 tcp
+ port-object eq 8000
+ port-object eq 8083
+ port-object eq www
+ port-object eq https
+object-group service DM_INLINE_SERVICE_6
+ service-object icmp echo
+ service-object icmp echo-reply
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service DM_INLINE_SERVICE_7
+ service-object icmp echo
+ service-object icmp6 echo
+
+DEBUG:netmiko:read_channel:  service-object tcp-udp destination eq echo 
+ service-object tcp destination eq echo 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object udp destination eq echo 
+object-group service DM_INLINE_SERVICE_8
+ service-object icmp echo
+ service-object tcp-udp destination eq echo 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object udp destination eq echo 
+object-group service DM_INLINE_TCP_14 tcp
+ port-object eq 5666
+ port-object eq 9102
+ port-object eq ssh
+ port-object range 8086 8088
+object-group service DM_INLINE_SERVICE_9
+ service-object icmp 
+ service-object tcp destination eq 1935 
+ service-object tcp destination eq 2020 
+ service-object tcp destination eq 8000 
+ service-object tcp destination eq 8100 
+ service-object tcp destination eq 8200 
+ service-object tcp destination range 10000 10010 
+ service-object udp destination range 10000 10010 
+ service-object tcp destination eq https 
+object-group service DM_INLINE_TCP_13 tcp
+ port-object eq 211
+ port-object eq 212
+ port-object eq 8081
+
+DEBUG:netmiko:read_channel:  port-object eq 8083
+ port-object eq 8086
+ port-object eq ftp
+ port-object eq sqlnet
+ port-object eq www
+ port-object eq 3389
+object-group service DM_INLINE_TCP_15 tcp
+ port-object eq ftp
+ port-object eq ssh
+object-group service DM_INLINE_TCP_16 tcp
+ port-object eq 8088
+ port-object eq 8443
+object-group service DM_INLINE_TCP_17 tcp
+ group-object 445
+ port-object eq 8080
+ port-object eq ftp
+ port-object eq ftp-data
+ port-object eq www
+ port-object eq nfs
+object-group service DM_INLINE_TCP_18 tcp
+ port-object eq 10443
+ port-object eq https
+object-group service DM_INLINE_TCP_19 tcp
+ port-object eq 10443
+ port-object eq 8443
+object-group service DM_INLINE_SERVICE_10
+ service-object icmp echo
+ service-object icmp6 echo
+ service-object tcp-udp destination eq echo 
+ service-object tcp destination eq echo 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object udp destination eq echo 
+object-group service DM_INLINE_SERVICE_11
+ service-object icmp echo
+ service-object icmp6 echo
+ service-object tcp destination eq echo 
+ service-object tcp-udp destination eq echo 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+
+DEBUG:netmiko:read_channel: object-group service DM_INLINE_TCP_3 tcp
+ port-object eq 33071
+ port-object eq ssh
+
+BSL-PES-FW01# 
+DEBUG:paramiko.transport:starting thread (client mode): 0x997d1720
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group1-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: 3des-cbc, aes128-cbc, aes192-cbc, aes256-cbc, aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: 3des-cbc, aes128-cbc, aes192-cbc, aes256-cbc, aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group1-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha1
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 172.20.201.31: b'6bec018a1e71ee2fab914f9de33153fc'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: +--------------------=== WARNING ===------------------------+
+| THIS IS A PRIVATE AND PROPRIETARY SYSTEM OF AMERICA MOVIL.|
+| ANY UNAUTHORIZED ACCESS TO OR MISUSE OF THE SYSTEM OR DATA|
+| MAY RESULT IN CIVIL AND/OR CRIMINAL PROSECUTION. AMERICA  |
+| MONITORS THE ACCESS AND USE OF THIS SYSTEM. |
++--------------------=== WARNING ===------------------------+
+Type help or '?' for a list of available commands.
+
+BSL-PES-FW01> 
+
+BSL-PES-FW01> 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal wi
+DEBUG:netmiko:read_channel: dth 511
+                       ^
+ERROR: % Invalid input detected at '^' marker.
+
+BSL-PES-FW01> 
+DEBUG:netmiko:Pattern found: (terminal width 511) +--------------------=== WARNING ===------------------------+
+| THIS IS A PRIVATE AND PROPRIETARY SYSTEM OF AMERICA MOVIL.|
+| ANY UNAUTHORIZED ACCESS TO OR MISUSE OF THE SYSTEM OR DATA|
+| MAY RESULT IN CIVIL AND/OR CRIMINAL PROSECUTION. AMERICA  |
+| MONITORS THE ACCESS AND USE OF THIS SYSTEM. |
++--------------------=== WARNING ===------------------------+
+Type help or '?' for a list of available commands.
+
+BSL-PES-FW01> 
+
+BSL-PES-FW01> terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal len
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: gth 0
+                       ^
+ERROR: % Invalid input detected at '^' marker.
+
+BSL-PES-FW01> 
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+                       ^
+ERROR: % Invalid input detected at '^' marker.
+
+BSL-PES-FW01> terminal length 0
+DEBUG:netmiko:
+                       ^
+ERROR: % Invalid input detected at '^' marker.
+
+BSL-PES-FW01> terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+BSL-PES-FW01> 
+DEBUG:netmiko:
+Parenthesis found in pattern.
+
+pattern: (\#|>)
+
+
+This can be problemtic when used in read_until_pattern().
+
+You should ensure that you use either non-capture groups i.e. '(?:' or that the
+parenthesis completely wrap the pattern '(pattern)'
+DEBUG:netmiko:Pattern found: (\#|>) 
+
+BSL-PES-FW01>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is BSL-PES-FW01>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+BSL-PES-FW01> 
+DEBUG:netmiko:Pattern found: (BSL\-PES\-FW01.*) 
+
+BSL-PES-FW01> 
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: enable
+Password: 
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: ((?:BSL\-PES\-FW01|ssword)) 
+Password
+DEBUG:netmiko:write_channel: b'********\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: *********
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+BSL-PES-FW01# 
+DEBUG:netmiko:Pattern found: (BSL\-PES\-FW01) : *********
+
+BSL-PES-FW01
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+BSL-PES-FW01# 
+DEBUG:netmiko:Pattern found: (BSL\-PES\-FW01.*) # 
+
+BSL-PES-FW01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+BSL-PES-FW01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is BSL-PES-FW01#
+DEBUG:netmiko:write_channel: b'terminal pager 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal pager
+DEBUG:netmiko:read_channel:  0
+
+BSL-PES-FW01# 
+DEBUG:netmiko:Pattern found: (terminal\ pager\ 0) terminal pager 0
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+BSL-PES-FW01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is BSL-PES-FW01#
+DEBUG:netmiko:write_channel: b'show object-group service\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show object-gro
+DEBUG:netmiko:read_channel: up servic
+DEBUG:netmiko:read_channel: e
+object-group service Block-Mgmt-Ports-TCP tcp
+ port-object eq 3389
+ port-object eq 5800
+ port-object eq 5900
+ port-object eq ssh
+ port-object eq telnet
+object-group service Block-Mgmt-Ports-UDP udp
+ port-object eq snmp
+ port-object eq snmptrap
+object-group service DM_INLINE_TCP_1 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_TCP_2 tcp
+ port-object eq 3389
+ port-object eq ssh
+ port-object eq www
+
+DEBUG:netmiko:Pattern found: (show\ object\-group\ service) show object-group service
+DEBUG:netmiko:read_channel:  port-object eq https
+object-group service DM_INLINE_TCP_4 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_TCP_5 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_TCP_6 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_TCP_8 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_TCP_9 tcp
+ port-object eq 3389
+ port-object eq ssh
+object-group service DM_INLINE_SERVICE_1
+ service-object object UDP_389 
+ service-object object tcp_389 
+object-group service DM_INLINE_SERVICE_2
+ service-object tcp destination eq domain 
+ service-object udp destination eq domain 
+object-group service DM_INLINE_SERVICE_3
+ service-object tcp destination eq domain 
+ service-object udp destination eq domain 
+object-group service DM_INLINE_SERVICE_5
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object icmp echo
+ service-object icmp6 echo
+ service-object tcp destination eq echo 
+ service-object udp destination eq echo 
+object-group service DM_INLINE_TCP_10 tcp
+ port-object eq www
+ port-object eq https
+object-group service DM_INLINE_UDP_1 udp
+ port-object eq domain
+ port-object eq ntp
+object-group service DM_INLINE_SERVICE_4
+ service-object icmp 
+ service-object tcp destination range 9081 9082 
+ service-object tcp destination range 9762 9763 
+ service-object tcp destination eq 8280 
+object-group service 8280 tcp
+
+DEBUG:netmiko:read_channel:  port-object eq 8280
+object-group service 445 tcp-udp
+ port-object eq 445
+object-group service TCP1433 tcp
+ port-object eq 1433
+object-group service DM_INLINE_TCP_11 tcp
+ port-object eq www
+ port-object eq https
+object-group service DM_INLINE_TCP_12 tcp
+ port-object eq 8000
+ port-object eq 8083
+ port-object eq www
+ port-object eq https
+object-group service DM_INLINE_SERVICE_6
+ service-object icmp echo
+ service-object icmp echo-reply
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service DM_INLINE_SERVICE_7
+ service-object icmp echo
+ service-object icmp6 echo
+ service-object tcp-udp destination eq echo 
+ service-object tcp destination eq echo 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object udp destination eq echo 
+object-group service DM_INLINE_SERVICE_8
+ service-object icmp echo
+ service-object tcp-udp destination eq echo 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object udp destination eq echo 
+object-group service DM_INLINE_TCP_14 tcp
+ port-object eq 5666
+ port-object eq 9102
+ port-object eq ssh
+ port-object range 8086 8088
+object-group service DM_INLINE_SERVICE_9
+ service-object icmp 
+ service-object tcp destination eq 1935 
+ service-object tcp destination eq 2020 
+ service-object tcp destination eq 8000 
+ service-object tcp destination eq 8100 
+ service-object tcp destination eq 8200 
+ service-object tcp destination range 10000 10010 
+ service-object udp destination range 10000 10010 
+ service-object tcp destination eq https 
+object-group service DM_INLINE_TCP_13 tcp
+ port-object eq 211
+ port-object eq 212
+ port-object eq 8081
+ port-object eq 8083
+
+DEBUG:netmiko:read_channel:  port-object eq 8086
+ port-object eq ftp
+ port-object eq sqlnet
+ port-object eq www
+ port-object eq 3389
+object-group service DM_INLINE_TCP_15 tcp
+ port-object eq ftp
+ port-object eq ssh
+object-group service DM_INLINE_TCP_16 tcp
+ port-object eq 8088
+ port-object eq 8443
+object-group service DM_INLINE_TCP_17 tcp
+ group-object 445
+ port-object eq 8080
+ port-object eq ftp
+ port-object eq ftp-data
+ port-object eq www
+ port-object eq nfs
+object-group service DM_INLINE_TCP_18 tcp
+ port-object eq 10443
+ port-object eq https
+object-group service DM_INLINE_TCP_19 tcp
+ port-object eq 10443
+ port-object eq 8443
+object-group service DM_INLINE_SERVICE_10
+ service-object icmp echo
+ service-object icmp6 echo
+ service-object tcp-udp destination eq echo 
+ service-object tcp destination eq echo 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object udp destination eq echo 
+object-group service DM_INLINE_SERVICE_11
+ service-object icmp echo
+ service-object icmp6 echo
+ service-object tcp destination eq echo 
+ service-object tcp-udp destination eq echo 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service DM_INLINE_TCP_3 tcp
+ port-object eq 33071
+ port-object eq ssh
+
+BSL-PES-FW01# 

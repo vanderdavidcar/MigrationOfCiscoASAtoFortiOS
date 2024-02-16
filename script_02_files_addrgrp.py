@@ -10,8 +10,12 @@ import json
 start_time = datetime.now()
 
 """
-Call function dev_connection that have all device and user information to connect and collect
+Main target here is to create a file name objects and put there IP Adressess to using on another function "script_addrgrp_object" to create a 
+FortiOS script
 """
+
+
+# Call function dev_connection that have all device and user information to connect and collect
 net_connect = ConnectHandler(**dev_connection.iosv)
 net_connect.enable() # Needed beacause command below is necessary privilege 15 to be executed
 term_pager0 = net_connect.send_command('terminal pager 0')
