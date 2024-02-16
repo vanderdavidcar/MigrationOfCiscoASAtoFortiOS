@@ -10,7 +10,7 @@ import json
 start_time = datetime.now()
 
 """
-Main target here is to create a file name objects and put there IP Adressess to using on another function "script_addrgrp_object" to create a 
+Main goal here is to create a file name objects and put there IP Adressess to using on another function "script_addrgrp_object" to create a 
 FortiOS script
 """
 
@@ -70,13 +70,24 @@ def create_external_file():
                 with open(f"output_{grpname}.txt", "a") as f:
                     f.write(f'{new_sub}')
                     f.close()
-        
+
+            # Loop with new list
+            for i in newgrp:
+                subpfx = f'{i[0]}/{i[1]}' # subnet with prefix length
+                net = IPv4Network(subpfx)
+                print(f'{net.network_address}/{net.prefixlen}')
+                subnet = f'{net.network_address}/{net.prefixlen}'
+                ip = "".join(str(subnet))
+                new_sub = []
+                new_sub.append(ip)
+                with open(f"output_{grpname}.txt", "a") as f:
+                    f.write(f'{new_sub}')
+                    f.close()
         # Create only prefix lenght /32
         if regex_prx32.search(hosts):
             netobject1 = hosts.split()[2]
             newgrp = []
             newgrp.append(netobject1)
- 
             # Loop with new list
             for i in newgrp:
                 # Find only hosts with prefix lenght 32

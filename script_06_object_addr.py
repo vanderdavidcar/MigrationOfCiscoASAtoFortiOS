@@ -9,23 +9,23 @@ load_dotenv()
 start_time = datetime.now()
 
 """
-Call function dev_connection that have all device and user information to connect and collect
+Creation of all IP Addresses founded on objects using regex
 """
+
+# Call function dev_connection that have all device and user information to connect and collect
 net_connect = ConnectHandler(**dev_connection.iosv)
 net_connect.enable()  # Needed beacause command below is necessary privilege 15 to be executed
 term_pager0 = net_connect.send_command("terminal pager 0")
 # Command executed on Cisco ASA to find a costumer configuration
 show_run = net_connect.send_command(f"show running-config object")
-show_services = net_connect.send_command(f"show running-config object | in service")
-
 
 def create_object_addr():
 
     # this regex is to match for object network, host, subnet and range.
-    obj_pattern = "network (?P<name>\S+)"
-    hst_pattern = "host (?P<host>\S+)"
-    sub_pattern = "subnet (?P<subnet>\S+)"
-    rng_pattern = "range (?P<range>\S.+)"
+    obj_pattern = "network (\S+)"
+    hst_pattern = "host (\S+)"
+    sub_pattern = "subnet (\S+)"
+    rng_pattern = "range (\S.+)"
 
     # create a regex object with the pattern in place.
     regex_nam = re.compile(obj_pattern)
