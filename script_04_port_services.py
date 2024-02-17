@@ -30,10 +30,6 @@ show_objgrp = showrun.splitlines()
 grpname_pattern = "object-group service (?P<grpname>\S+)"
 grpname_regex = re.compile(grpname_pattern)
 
-
-
-
-
 for line in show_objgrp:
     # prot-object
     port_object_pattern = "port-object.eq (\S+)"
