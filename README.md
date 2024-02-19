@@ -25,6 +25,9 @@ nb_api = ["192.168.20.1"]</br>
 ### script_01_rules_csv.py
 </b>Using regex to find rules of specific network and creating .csv file. Can be using together jinja template for create a script </br></b>
 
+### script_01_rules_template.py
+</b>Creating fortiOS scripts by .csv file with jinja template</br></b>
+
 ### script_02_files_addrgrp.py
 </b>Used to create only prefix-lenghts (subnet and host) into object-group </br></b>
 
